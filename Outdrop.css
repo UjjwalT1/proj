@@ -1,0 +1,65 @@
+.maindiv{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    min-width: 400px;
+    margin:-10px 1% 0 1%;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all .5s;
+    background-color: rgba(200,67, 93,.47);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.707),-2px -2px 5px rgba(0, 0, 0, 0.7);
+
+}
+
+.subdiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    font-size: 22px;
+    font-family: 'Exo 2';
+    background-color: rgba(89, 88, 88, 0.429);
+    border-radius: 10px;
+    padding: 20px 30px 30px 30px;
+}
+
+.Detailpic>img{
+    width: 90%;
+    border-radius: 2%;
+    margin: 5% 15% 5% 10%;
+}
+
+.Detail>p{
+    color: aliceblue;
+    margin: 10px 0 10px 0;
+}
+
+.Detail>p>span{
+    color: #f88aa7cf;
+}
+
+.inact{
+    display: none;
+    
+}
+
+.act{
+    display: grid;
+    transition: .1s;
+    animation: tt .4s ease-in forwards;
+}
+
+@keyframes tt {
+    0%{ 
+        transform: translateY(10px);
+        opacity: 0;
+
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+    
+}

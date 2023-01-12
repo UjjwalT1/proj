@@ -1,0 +1,71 @@
+.sidebar{
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.753);
+    border-radius: 1vh;
+    width: 250px;
+    transition: all .5s;
+    transform: translateX(-120%);
+    top: 10vh;
+    bottom: 2vh;
+
+   
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    box-shadow: 5px 5px 30px rgba(200,67, 93,.9),2px 2px 10px rgba(200,67, 93,.4);
+}
+
+.sidebaar{
+    
+    transform: translateX(-5%);
+}
+
+.sidebar p,.sidebar a{
+    padding: 10px 0 10px 20px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all .2s;
+}
+.sidebar p:hover,.sidebar a:hover{
+    cursor: pointer;
+    transform: translateX(15px);
+    border-radius: 8px;
+    color:rgb(173, 0, 43);
+    font-weight: 600;
+    background-color:rgba(255, 255, 255, 0.788);
+}
+.sidebar p:active,.sidebar a:active{
+    cursor: pointer;
+    transform: translateX(10px);
+    border-radius: 8px;
+    color: #000000 ;
+    font-weight: 600;
+    background-color:rgba(255, 255, 255, 0.788);
+}
+
+.sidebarbutton{
+   width:45px;
+    height: 38px;
+    background-color:transparent;
+    border:none;
+    margin: 0 5px 0 15px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.sidebarbutton:hover{
+     background-color: rgba(83, 1, 47, 0.34);
+    border-radius: 50%;
+    height: 43px;
+    width: 45px;
+    box-shadow: 2px 2px 5px rgba(200,67, 93,.9);
+}
+    
+ .sidebarbutton:active{
+    background-color:  rgba(255, 255, 255, 0.16);
+   border-radius: 50%;
+   height: 43px;
+   width: 45px;
+
+}

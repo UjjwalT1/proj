@@ -1,0 +1,120 @@
+.container{
+    display:grid;
+    grid-template-columns: 430px 430px 430px;
+    margin: 10% 0 0 7%;
+
+}
+
+.container .subcontainer{
+    background-color:rgba(200,67, 93,.5);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.707);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    position: relative;
+
+}
+.dispimagecontainer{
+    margin: 6px;
+    width: 370px;
+    transition: all .2s;
+}
+.dispimagecontainer:hover{
+   transform: scale(1.06);
+}
+.dispimage{
+    width: 100%;
+    border-radius: 2%;
+}
+.descriptioncontainer{
+    margin: -8px 0 20px 10px;
+}
+.imagedescription{
+    color: aliceblue;
+    margin: 0 ;
+    font-size: 30px;
+    font-weight: 500;
+}
+.location{
+    margin-bottom: 100px;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.readmore{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 14px;
+    color: #99d4ff;
+    text-decoration: none;
+    padding: 3px 7px 3px 7px;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0);
+    transition: .2s;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.607);
+    
+
+}
+.extra{
+    display: block;
+    padding-top: 12px;
+    color: aliceblue;
+    font-size: 15px;
+}
+.readmore:hover{
+    color: #fbfbfb;
+}
+
+.sidebarheading{
+    color: aliceblue;
+    
+    text-decoration: underline;
+    margin-top: 10%;
+    margin-left: 8.5%;
+    margin-bottom: -9%;
+}
+.sidebarheading::before{
+    content: " __";
+}
+.sidebarheading::after{
+    content: ": __";
+ }
+
+
+@media (max-width:950px){
+    .container{
+        display:grid;
+        grid-template-columns: 430px 430px;
+        margin: 10% 0 0 4%;
+        
+    }
+
+    .sidebarheading{
+        color: aliceblue;
+        margin-top: 100px;
+        margin-left: 6%;
+        margin-bottom: -9%;
+    }
+    
+}
+
+@media (max-width:500px){
+    .container{
+        display:grid;
+        grid-template-columns: 430px ;
+        margin: 10% 0 0 4%;
+        
+    }
+    .sidebarheading{
+        color: aliceblue;
+        margin-top: 100px;
+        margin-left: 40px;
+        margin-bottom: -40px;
+    }
+    
+}
+
+

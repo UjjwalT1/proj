@@ -1,0 +1,30 @@
+
+.inactive{
+    display: none;
+    transition: .5s;  
+}
+
+.active{
+    display:block;
+    
+    animation: ty .3s ease-in forwards;
+}
+.cardshift,.imageContShift{
+    transform: translateX(250px);
+}
+
+@keyframes ty {
+    0%{ 
+       opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+
+
+
+

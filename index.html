@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Search it!</title>
+
+        <link rel="icon" type="image/x-icon" href="Photos/atw.gif">
+            <!-- CSS ATTACHMENTS-->
+        <link rel="stylesheet" href="genral.css">
+        <link rel="stylesheet" href="hiding.css">
+        <link rel="stylesheet" href="sidebar.css">
+        <link rel="stylesheet" href="hammenu.css">
+        <link rel="stylesheet" href="topbar.css">
+        <link rel="stylesheet" href="card-detail.css">
+        <link rel="stylesheet" href="Outdrop.css">
+        <link rel="stylesheet" href="imagecontainer.css">
+        <link rel="stylesheet" href="practice.css">
+
+            <!--GOOGLE FONT ATTACHMENTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,500;0,600;0,900;1,200;1,900&display=swap" rel="stylesheet">
+    
+    </head>
+
+    <body>
+        
+            <!-- TOP BAR-->
+        <div class="topbar">
+            <div  class="topbarleft">
+                <button class="sidebarbutton">
+                    <div class="menuTop"></div>
+                    <div class="menuMid"></div>
+                    <div class="menuBottom"></div>
+                </button>
+            </div>
+            <div class="topbarcenter">
+                <input class="search" type="search" placeholder="Search">
+            </div>
+            <div class="topbarright" >
+                RIGHT
+            </div>
+           
+        </div>
+        
+
+        <!-- SIDE BAR-->
+        <div class="sidebar" >
+            <p data-tab-target=".homedescription">HOME</p>
+            <p data-tab-target="#mout">MOUNTAINS</p>
+            <p data-tab-target="#monut">MONUMENTS</p>
+            <p data-tab-target="#sw">SEVEN WONDERS</p>            
+            <p data-tab-target="#bech">BEACHES</p>
+            
+
+
+            
+           
+        </div>
+
+        <!-- BACKGROUND-->
+       <div class="homepage">
+        <div style="position: fixed;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;">
+           <div class="homecontent"></div>
+           <img class="homepageimage" src="Photos/homeback7.jpg">
+        </div>
+       
+       </div>
+
+
+
+       <!-- WEBSITE HOME DISPLAY-->
+       <div class="homedescription inactive active">
+        <h1 class="heading">AROUND<br>THE WORLD </h1>
+        <p class="quote">In the above search bar,Search for locations throughout the globe and 
+            you will be returned Nearby cities ,landmarks ,transports and hotels with just one button press.
+            <br>The menu button on top left contains buttons to go jump to the page that contains few picked collections of wonderful locations. </p>
+        
+       </div>
+
+
+
+       <!-- CARD CLICK OPEN DETAIL-->
+       <div class="cardDetail inactive">
+        <div class="descriptioncontainer">
+            <div style="background-color: aliceblue;
+                        width: 100%;
+                        height: 5px;
+                        margin: 40px 0 -15px 0;
+                        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.407),-2px -2px 5px rgba(0, 0, 0, 0.4);"></div>
+            <p class="descriptionDetail"><br><span class="location"></span>
+            </p>
+            <div style="background-color: aliceblue;
+                        width: 100%;
+                        height: 5px;
+                        margin: -10px 0 40px 0;
+                        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.407),-2px -2px 5px rgba(0, 0, 0, 0.4);"></div>
+            
+        </div>
+
+        <div class="subcontainerDetail">
+           <div id="bigimage">
+            <div class="dispimagecontainerDetail"><img class="dispimage" src=""></div>
+            
+            <!-- SUPPLEMENT IMAGES GRID-->
+            <div class="temp0">
+            <div  class="supplementgrid" >
+                        <!--Filled by api-->   
+               
+
+            </div>
+        </div>
+
+
+           </div>
+       
+
+        </div>
+        
+    
+          
+
+
+
+    
+    <!--API FETCHED DATA(images and texts)-->
+    <div class="apiinfo" style="
+                    margin-top: 30px;
+                    padding: 20px;
+                    border-radius:10px;
+                    border-left: 1px solid rgba(255, 255, 255, 0.1);
+                    border-top: 1px solid rgba(255, 255, 255, 0.1);
+                    box-shadow: 5px 0px 9px rgba(0, 0, 0, 0.707);">
+    <div class="City">
+        <div  style="
+        padding: 17px; display: grid; grid-template-columns:1fr 1fr" ;> Places Nearby :  <button class="readmor" data-detail="#one"><img src="Photos/arro.png"></button>
+                <!--underline--> 
+            </div>
+            <div class="miniunderline"></div>
+            <div class="maindiv inact" id="one">
+                To Visit:
+                
+
+                
+
+        
+                <!-- Filled by API-->
+                </div>
+
+        <div class="temp1">
+        <div class="containerapi cityyy">
+              <!--<div class="subcontainer" >
+                <div class="dispimagecontainer"><img class="dispimag" src="Photos/Display images/test2.jpg"></div>
+                <div  class="descriptioncontainer">
+                    <p class="imagedescription">Taj Mahal <br><span class="location"> Agra , India</span></p>
+                </div>
+                <div class="ordinate">Co-ordinates:<br><span> 37.12888,-84.083725 </span></div>
+                <button class="readmor">Details..</button>
+            </div> -->  
+          
+            
+
+        
+         <!--Filled by API--> 
+            
+            
+            
+        </div>
+    </div>
+    </div>
+
+        <div class="Hotel">
+            <div  style="
+            padding: 17px; display: grid; grid-template-columns:1fr 1fr" ;> Hotels Nearby :  <button class="readmor" data-detail="#two"><img src="Photos/arro.png"></button>
+            <!--underline--> 
+            </div>
+            <div class="miniunderline"></div>
+            
+    <div class="maindiv inact" id="two">
+        HOTELS:
+        <div class="Ddwn" data-scrol="#pom">Calaveras County Museum Complex
+            <div class="subdiv inact" id="pom">
+                <div class="Detail">
+                    <p>TimeZone :<span style="margin-left: 10px;">America/Los_Angeles</span></p>
+                    <p>Location :<span style="margin-left: 20px;"> San Andreas, Calaveras County, California</span></p>
+                    <p>Address :<span style="margin-left: 27px;">30 N Main Street, San Andreas, CA 95249</span></p>
+                    <p>Contact :<span style="margin-left: 35px;">+1 209-754-1010</span></p>
+                    <p>Official Page :<a style="margin-left: 35px;" href="http://www.calaverascohistorical.com/museum.html">Click here to Redirect</a></p>
+                    <p>Rating :<span style="margin-left: 45px;">3 star</span></p>
+                    <p>Description :<span style="margin-left: 25px;">Welcome to Cocotte - Farm Roast & Winery . Our passion for grill and quality ingredients leaded us to bring you today the best of what we can find all over thailand farms and overseas . Our executive Chef , Sebastien Segurola from france is here to sublime all of those wisely selected items to make you enjoy your time at Cocotte .</span></p>
+                </div>
+                <div class="Detailpic">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/19/ce/c1/b6/tomahawk-wagyu.jpg">
+                </div>
+               
+            </div>   
+            </div>
+
+            <div class="Ddwn" data-scrol="#pol">Calaveras County Museum Complex
+                <div class="subdiv inact" id="pol">
+                    <div class="Detail">
+                        <p>TimeZone :<span style="margin-left: 10px;">America/Los_Angeles</span></p>
+                        <p>Location :<span style="margin-left: 20px;"> San Andreas, Calaveras County, California</span></p>
+                        <p>Address :<span style="margin-left: 27px;">30 N Main Street, San Andreas, CA 95249</span></p>
+                        <p>Contact :<span style="margin-left: 35px;">+1 209-754-1010</span></p>
+                        <p>Official Page :<a style="margin-left: 35px;" href="http://www.calaverascohistorical.com/museum.html">Click here to Redirect</a></p>
+                        <p>Rating :<span style="margin-left: 45px;">3 star</span></p>
+                        <p>Description :<span style="margin-left: 25px;">Welcome to Cocotte - Farm Roast & Winery . Our passion for grill and quality ingredients leaded us to bring you today the best of what we can find all over thailand farms and overseas . Our executive Chef , Sebastien Segurola from france is here to sublime all of those wisely selected items to make you enjoy your time at Cocotte .</span></p>
+                    </div>
+                    <div class="Detailpic">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/19/ce/c1/b6/tomahawk-wagyu.jpg">
+                    </div>
+                   
+                </div>   
+                </div> 
+
+        <!-- Filled by API-->
+        </div>
+            <div class="temp2">
+            <div class="containerapi hotell">
+                
+              
+                  <!--Filled by API--> 
+                
+                
+            </div>
+        </div>
+        </div>
+
+        <div class="Landmark" >
+            <div  style="
+            padding: 17px; display: grid; grid-template-columns:1fr 1fr" ;> Landmarks Nearby :  <button class="readmor" data-detail="#three"><img src="Photos/arro.png"></button>
+            <!--underline--> 
+            </div>
+            <div class="miniunderline"></div>
+            <div class="maindiv inact" id="three">
+                LANDMARKS:
+               
+    
+                      
+                 
+        
+                <!-- Filled by API-->
+                </div>
+
+            <div class="temp3">
+            <div class="containerapi jamin">
+            
+
+              <!--Filled by API--> 
+
+
+            </div>
+        </div>
+        </div>
+
+        <div class="Transport">
+            <div  style="
+            padding: 17px; display: grid; grid-template-columns:1fr 1fr" ;> Transports Nearby :  <button class="readmor" data-detail="#four"><img src="Photos/arro.png"></button>
+            <!--underline--> 
+            </div>
+            <div class="miniunderline"></div>
+            <div class="maindiv inact" id="four">
+                Transport:
+                <div class="Ddwn" data-scrol="#poik">---SAMPLE---
+                    <div class="subdiv inact" id="poik">
+                        <div class="Detail">
+                            <p>TimeZone :<span style="margin-left: 10px;">America/Los_Angeles</span></p>
+                            <p>Location :<span style="margin-left: 20px;"> San Andreas, Calaveras County, California</span></p>
+                            <p>Address :<span style="margin-left: 27px;">30 N Main Street, San Andreas, CA 95249</span></p>
+                            <p>Contact :<span style="margin-left: 35px;">+1 209-754-1010</span></p>
+                            <p>Official Page :<a style="margin-left: 35px;" href="http://www.calaverascohistorical.com/museum.html">Click here to Redirect</a></p>
+                            <p>Rating :<span style="margin-left: 45px;">3 star</span></p>
+                            <p>Description :<span style="margin-left: 25px;">Welcome to Cocotte - Farm Roast & Winery . Our passion for grill and quality ingredients leaded us to bring you today the best of what we can find all over thailand farms and overseas . Our executive Chef , Sebastien Segurola from france is here to sublime all of those wisely selected items to make you enjoy your time at Cocotte .</span></p>
+                        </div>
+                        <div class="Detailpic">
+                            <img src="Photos/images.jpeg">
+                        </div>
+                       
+                    </div>   
+                    </div> 
+                 
+        
+                <!-- Filled by API-->
+                </div>
+
+            <div class="temp4">
+                <div class="containerapi gadi">
+            
+
+                    <!--Filled by API--> 
+      
+      
+                  </div>
+    </div>
+
+        </div>
+
+        </div>
+
+       
+
+    </div>
+
+    <!--Detail data-->
+    
+
+
+    
+
+
+
+     
+
+
+
+
+
+
+<!-- SAMPLE CONTAINER-->
+       <!-- 7 Wonders-->
+       <div id="sw" class="inactive" style="margin-top:201.8px;">
+        <h1 class="sidebarheading">SEVEN WONDERS</h1>
+       <div class="container">
+        <div class="subcontainer" data-category="wonders">
+            <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/thecolosseum.jpg"></div>
+            <div class="descriptioncontainer">
+                <p class="imagedescription">The Colosseum <br><span class="location"> Rome , Italy</span>
+                </p>
+                 <span class="extra">
+                    The Colosseum is an oval amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world today, despite its age. In addition, water was sometimes pumped into the Colosseum for mock naval engagements.
+                 </span>
+            </div>
+        <a href="#" class="readmore">Details..</a>
+        </div>
+        <div class="subcontainer" data-category="wonders">
+            <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Taj_Mahal_28Edited29_20190510111052.jpeg"></div>
+            <div  class="descriptioncontainer">
+                <p class="imagedescription">Taj Mahal <br><span class="location"> Agra , India</span></p>
+                <span class="extra">
+                    The Taj Mahal is an Islamic ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan (r. 1628–1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. 
+                </span>
+            </div>
+            <a href="#" class="readmore">Details..</a>
+        </div>
+        <div class="subcontainer" data-category="wonders">
+            <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/petra.jpg"></div>
+            <div  class="descriptioncontainer">
+                <p class="imagedescription">Petra <br><span class="location"> Petra , Jordan</span></p>
+                <span class="extra">
+                    The ancient city of Petra, Jordan, is located in a remote valley, nestled among sandstone mountains and cliffs. It was purported to be one of the places where Moses struck a rock and water gushed forth. Later the Nabataeans, an Arab tribe, made it their capital, and during this time it flourished, becoming an important trade center, especially for spices.                
+                </span>
+            </div>
+            <a href="#" class="readmore">Details..</a>
+        </div>
+        <div class="subcontainer" data-category="wonders">
+            <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Chichen-Itza-Yucatan-Mexico.webp"></div>
+            <div  class="descriptioncontainer">
+                <p class="imagedescription">Chichen Itza<br><span class="location"> Yucatan , Mexico</span></p>
+                <span class="extra">
+                    Chichén Itzá is a Mayan city on the Yucatán Peninsula in Mexico, which flourished in the 9th and 10th centuries CE. Under the Mayan tribe Itzá—who were strongly influenced by the Toltecs—a number of important monuments and temples were built. Among the most notable is the stepped pyramid El Castillo (“The Castle”), which rises 79 feet (24 meters) above the Main Plaza.                 
+                </span>
+            </div>
+            <a href="#" class="readmore">Details..</a>
+         </div>
+         <div class="subcontainer" data-category="wonders">
+            <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Great-Wall-of-China-Beijing.webp"></div>
+            <div  class="descriptioncontainer">
+                <p class="imagedescription">Great Wall of China<br><span class="location">Expansion: near Beijing.</span></p>
+                <span class="extra">
+                    Great might be an understatement. One of the world’s largest building-construction projects, the Great Wall of China is widely thought to be about 5,500 miles (8,850 km) long; a disputed Chinese study, however, claims the length is 13,170 miles (21,200 km). Work began in the 7th century BCE and continued for two millennia.
+                 </span>
+            </div>
+            <a href="#" class="readmore">Details..</a>
+         </div>
+         <div class="subcontainer" data-category="wonders">
+            <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/christ.webp"></div>
+            <div  class="descriptioncontainer">
+                <p class="imagedescription">Christ the Redeemer<br><span class="location">Mount Corcovado , Rio de Janeiro</span></p>
+                <span class="extra">
+                    Christ the Redeemer, a colossal statue of Jesus, stands atop Mount Corcovado in Rio de Janeiro. Its origins date to just after World War I, when some Brazilians feared a “tide of godlessness.” They proposed a statue, which was ultimately designed by Heitor da Silva Costa, Carlos Oswald, and Paul Landowski.
+                </span>
+            </div>
+            <a href="#" class="readmore">Details..</a>
+         </div>
+         <div class="subcontainer" data-category="wonders">
+            <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Machu-Picchu.webp"></div>
+            <div  class="descriptioncontainer">
+                <p class="imagedescription">Machu Picchu<br><span class="location"> Cuzco , Peru</span></p>
+                <span class="extra">
+                    This Incan site near Cuzco, Peru, was “discovered” in 1911 by Hiram Bingham, who believed it was Vilcabamba, a secret Incan stronghold used during the 16th-century rebellion against Spanish rule. Although that claim was later disproved, the purpose of Machu Picchu has confounded scholars. 
+                 </span>
+            </div>
+            <a href="#" class="readmore">Details..</a>
+         </div>
+       
+    </div>
+</div>
+
+
+    <!--BEACHES-->
+    <br><br>
+    <div id="bech" class="inactive">
+        <h1 class="sidebarheading">BEACHES</h1>
+
+
+        <div class="container">
+         <div class="subcontainer" data-category="wonders">
+             <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Copacabana, Rio de Janeiro, Brazil.jpg"></div>
+             <div class="descriptioncontainer">
+                 <p class="imagedescription">Copacabana<br><span class="location"> Rio de Janeiro, Brazil</span>
+                 </p>
+                  <span class="extra">
+                    At Copacabana Beach, one of the world’s most famous beaches, the people-watching may be even more riveting than the scenery. Spy “cariocas” (native Rio residents) socializing, playing volleyball and sipping coconut water, all in requisite Brazilian swimwear.
+
+                </span>
+             </div>
+         <a href="#" class="readmore">Details..</a>
+         </div>
+         <div class="subcontainer" data-category="wonders">
+             <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Santa Monica Beach, California.jpg"></div>
+             <div  class="descriptioncontainer">
+                 <p class="imagedescription">Santa Monica Beach<br><span class="location"> California, US</span></p>
+                 <span class="extra">
+                    Spanning 3.5 miles, Santa Monica Beach is where nostalgia meets California living. Along Ocean Front Walk, fitness enthusiasts take advantage of retro workout equipment, while the Marvin Braude Bike Trail hums with tanned skateboarders, rollerbladers and cyclists at, perhaps, the most famous beach in the world.                 
+                </span>
+             </div>
+             <a href="#" class="readmore">Details..</a>
+         </div>
+         <div class="subcontainer" data-category="wonders">
+             <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/South Beach, Miami, Florida.jpg"></div>
+             <div  class="descriptioncontainer">
+                 <p class="imagedescription">South Beach <br><span class="location"> Miami, Florida</span></p>
+                 <span class="extra">
+                    Glamorous hotels, clubs and restaurants converge in South Beach, but the American Riviera is most famous for its Art Deco vibe and two miles of white sand.              
+                </span>
+            </div>
+
+             <a href="#" class="readmore">Details..</a>
+         </div>
+         <div class="subcontainer" data-category="wonders">
+             <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Renaissance Island, Aruba.jpg"></div>
+             <div  class="descriptioncontainer">
+                 <p class="imagedescription">Renaissance Island<br><span class="location"> Aruba</span></p>
+                 <span class="extra">
+                    The Renaissance Aruba Resort & Casino’s man-made private island is the only place in Aruba to take a selfie with flamboyance of flamingos, who are happy to oblige in return for kibble from a vending machine (bring quarters).             
+                </span>
+            </div>
+             <a href="#" class="readmore">Details..</a>
+          </div>
+          <div class="subcontainer" data-category="wonders">
+             <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Waikiki, Honolulu, Hawaii.jpg"></div>
+             <div  class="descriptioncontainer">
+                 <p class="imagedescription">Waikiki<br><span class="location">Honolulu, Hawaii</span></p>
+                 <span class="extra">
+                    In 1901, the Moana Surfrider resort opened on the south shore of Oahu, and Waikiki’s status as a prime vacation spot was cemented. More than a century later, a multimillion-dollar refurbishment transformed Kuhio Beach and the Waikiki Beach Walk, an alfresco promenade that buzzes with live music, nightlife, restaurants and shops.
+
+                </span>
+             </div>
+             <a href="#" class="readmore">Details..</a>
+          </div>
+          <div class="subcontainer" data-category="wonders">
+             <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Navagio Beach, Zakynthos, Greece.jpg"></div>
+             <div  class="descriptioncontainer">
+                 <p class="imagedescription">Navagio Beach<br><span class="location">Zakynthos, Greece</span></p>
+                 <span class="extra">
+                    Enclosed by limestone cliffs, the cove is also known as Shipwreck Beach, thanks to the rusting vessel of the Panayiotis, which washed ashore here in 1982. Get the obligatory lofty photo from the viewpoint near the Anafonitria monastery.                 
+                </span>
+             </div>
+             <a href="#" class="readmore">Details..</a>
+          </div>
+          <div class="subcontainer" data-category="wonders">
+             <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Whitsunday Island, Australia.jpg"></div>
+             <div  class="descriptioncontainer">
+                 <p class="imagedescription">Whitehaven Beach<br><span class="location"> Whitsunday Island, Australia</span></p>
+                 <span class="extra">
+                    Preserved within Whitsunday Islands National Park on the Great Barrier Reef, Whitehaven Beach stretches for more than four miles. Its most recognizable section, Hill Inlet, dazzles observers with its multi-tinted turquoise water and bleach-white silica sand that shifts and swirls with the tides.
+                </span>
+             </div>
+             <a href="#" class="readmore">Details..</a>
+          </div>
+          <div class="subcontainer" data-category="wonders">
+            <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Maya Bay, Phi Phi Islands, Thailand.jpg"></div>
+            <div  class="descriptioncontainer">
+                <p class="imagedescription">Maya Bay<br><span class="location"> Phi Phi Islands, Thailand</span></p>
+                <span class="extra">
+                    Basted onto the travel map after the release of the film The Beach in 2000, Maya Bay sees more tourists than it can literally handle. 
+                </span>
+            </div>
+            <a href="#" class="readmore">Details..</a>
+         </div>
+         <div class="subcontainer" data-category="wonders">
+            <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Trunk Bay, St. John, U.S. Virgin Island.jpg"></div>
+            <div  class="descriptioncontainer">
+                <p class="imagedescription">Trunk Bay<br><span class="location">  St. John, U.S. Virgin Island</span></p>
+                <span class="extra">
+                    Donated to the U.S. National Park Service by Laurence S. Rockefeller in 1956, Trunk Bay remains blissfully hotel-free. Visitors of the USVI do, however, share the pristine beach with cruise passengers and schools of tropical fish, viewed along the 225-yard underwater snorkeling trail.
+                </span>
+            </div>
+            <a href="#" class="readmore">Details..</a>
+         </div>
+         <div class="subcontainer" data-category="wonders">
+            <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Anse Source d’Argent, Seychelles.jpg"></div>
+            <div  class="descriptioncontainer">
+                <p class="imagedescription">Anse Source d’Argent<br><span class="location">Seychelles</span></p>
+                <span class="extra">
+                    Once believed to be the Garden of Eden, the Seychelles are about as close as it gets to heaven on Earth. And with no airport, no resort chains and bicycles replacing cars, the island of La Digue is particularly idyllic.
+                               </span>
+            </div>
+            <a href="#" class="readmore">Details..</a>
+         </div>
+         <div class="subcontainer" data-category="wonders">
+            <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Spiaggia Grande, Positano, Italy.jpg"></div>
+            <div  class="descriptioncontainer">
+                <p class="imagedescription">Spiaggia Grande<br><span class="location"> Positano, Italy</span></p>
+                <span class="extra">
+                    With its spectacular backdrop of pastel-colored buildings climbing up the hillside, it’s no wonder Positano, on the Amalfi Coast, is a magnet for celebrities like Gwyneth Paltrow and Denzel Washington.           
+                    </span>
+
+            </div>
+            <a href="#" class="readmore">Details..</a>
+         </div>
+        
+     </div>
+ </div>
+       
+ <!--Mountains-->
+ <div id="mout" class="inactive">
+    <h1 class="sidebarheading">MOUNTAINS</h1>
+
+    <div class="container">
+     <div class="subcontainer" data-category="wonders">
+         <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/matterhorn-1313x875.jpg"></div>
+         <div class="descriptioncontainer">
+             <p class="imagedescription"> Matterhorn<br><span class="location"> Switzerland</span>
+             </p>
+              <span class="extra">
+                This Alpine peak spans the border between Switzerland and Italy. At 4,478 metres it’s smaller than the famed Mont Blanc (4,810 metres), but its striking pyramidal shape – not to mention its spot overlooking the cosy Swiss ski town of Zermatt – makes it the poster child for the Alps.
+                          </span>
+         </div>
+     <a href="#" class="readmore">Details..</a>
+     </div>
+     <div class="subcontainer" data-category="wonders">
+         <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/denali-1313x875.jpg"></div>
+         <div  class="descriptioncontainer">
+             <p class="imagedescription">Mammoth Denali <br><span class="location">Denali, USA</span></p>
+             <span class="extra">
+                Mammoth Denali is the highest peak in all of North America. Craggy and snow-covered, it soars to more than 6,190 metres above sea level, rising from the stark valleys of Alaska’s Denali National Park. The mountain was once known as Mt McKinley, but after many decades of controversy, in 2016, the peak was officially dubbed Denali, a name long used by native peoples.
+                         </span>
+         </div>
+         <a href="#" class="readmore">Details..</a>
+     </div>
+     <div class="subcontainer" data-category="wonders">
+         <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/kirkjufell-1313x875.jpg"></div>
+         <div  class="descriptioncontainer">
+             <p class="imagedescription">Kirkjufell<br><span class="location"> Kirkjufell, Iceland</span></p>
+             <span class="extra">
+                The strangely conical Kirkjufell, or “church mountain”, is often touted as Iceland’s most photographed sight. It’s not hard to see why. The yellow-green bluff looms over West Iceland’s Snæfellsnes peninsula, with pretty waterfall Kirkjufellsfoss and several sandy beaches in its wake. Such is its drama that the mountain even made a cameo in series seven of cult TV show Games of Thrones.
+                         </span>
+         </div>
+         <a href="#" class="readmore">Details..</a>
+     </div>
+     <div class="subcontainer" data-category="wonders">
+         <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/table-mountain-1400x874.jpg"></div>
+         <div  class="descriptioncontainer">
+             <p class="imagedescription"> Table Mountain<br><span class="location">  South Africa</span></p>
+             <span class="extra">
+                One of the world’s most famous pinnacles, Table Mountain watches over the South African city of Cape Town from 1,085 metres at its highest point. As the name suggests, it’s known for its distinctive flat top and also for its diverse wildlife. Keep an eye out for endemic African species such as dassies: cute-as-a-button, furry mammals that look a little like plump meerkats.            
+             </span>
+
+         </div>
+         <a href="#" class="readmore">Details..</a>
+      </div>
+      <div class="subcontainer" data-category="wonders">
+         <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/vinicunca-1313x875.jpg"></div>
+         <div  class="descriptioncontainer">
+             <p class="imagedescription"> Vinicunca<br><span class="location"> Peru</span></p>
+             <span class="extra">
+                Peru’s pink and yellow-streaked Vinicunca or “Rainbow Mountain” seems to belong on another planet. But it’s part of the Peruvian Andes, right here on Earth. The mountain, whose colours are caused by mineral deposits, is around a three-to-four-hour drive southeast of Cusco, a beautiful city filled with Spanish Colonial buildings.
+             </span>
+         </div>
+         <a href="#" class="readmore">Details..</a>
+      </div>
+      <div class="subcontainer" data-category="wonders">
+         <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/mount-fuji-1313x875.jpg"></div>
+         <div  class="descriptioncontainer">
+             <p class="imagedescription">Mount Fuji<br><span class="location">Japan</span></p>
+             <span class="extra">
+                Mount Fuji is the largest peak in Japan. It tops out at a whopping 3,775 metres, and is at its best when finished with a generous hood of snow. It has great cultural significance too. The mountain has long been considered sacred, attracting centuries’ worth of pilgrims of Buddhist, Shinto and other faiths.
+            </span>
+         </div>
+         <a href="#" class="readmore">Details..</a>
+      </div>
+      <div class="subcontainer" data-category="wonders">
+         <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/mount-huangshan-1313x875.jpg"></div>
+         <div  class="descriptioncontainer">
+             <p class="imagedescription"> Mount Huangshan (Yellow Mountain)<br><span class="location">China</span></p>
+             <span class="extra">
+                Mount Huangshan thoroughly deserves its nickname: “the loveliest mountain in China”. As if plucked straight from Avatar, the huge rock formations are made even more mysterious by a perpetual layer of mist.
+                It was given the name Yellow Mountain under the Tang Dynasty way back in 747. 
+             </span>
+         </div>
+         <a href="#" class="readmore">Details..</a>
+      </div>
+      <div class="subcontainer" data-category="wonders">
+        <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/castle-mountain-1313x875.jpg"></div>
+        <div  class="descriptioncontainer">
+            <p class="imagedescription">  Castle Mountain<br><span class="location">Canada</span></p>
+            <span class="extra">
+                Banff National Park has plenty of peaks, but Castle Mountain is the most unique. And it’s easy to see how it got its name. The mountain resembles a turreted fortress, perched ominously above the spruce and fir trees in the Canadian Rockies.
+            </span>
+        </div>
+        <a href="#" class="readmore">Details..</a>
+     </div>
+    
+ </div>
+</div>
+
+ <!--Monuments-->
+ <div id="monut" class="inactive">
+    <h1 class="sidebarheading">MONUMENTS</h1>
+
+    <div class="container">
+     <div class="subcontainer" data-category="wonders">
+         <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/thecolosseum.jpg"></div>
+         <div class="descriptioncontainer">
+             <p class="imagedescription">The Colosseum <br><span class="location"> Rome , Italy</span>
+             </p>
+              <span class="extra">
+                 The Colosseum is an oval amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world today, despite its age. In addition, water was sometimes pumped into the Colosseum for mock naval engagements.
+              </span>
+         </div>
+     <a href="#" class="readmore">Details..</a>
+     </div>
+     <div class="subcontainer" data-category="wonders">
+         <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Taj_Mahal_28Edited29_20190510111052.jpeg"></div>
+         <div  class="descriptioncontainer">
+             <p class="imagedescription">Taj Mahal <br><span class="location"> Agra , India</span></p>
+             <span class="extra">
+                 The Taj Mahal is an Islamic ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan (r. 1628–1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. 
+             </span>
+         </div>
+         <a href="#" class="readmore">Details..</a>
+     </div>
+     <div class="subcontainer" data-category="wonders">
+         <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/petra.jpg"></div>
+         <div  class="descriptioncontainer">
+             <p class="imagedescription">Petra <br><span class="location"> Petra , Jordan</span></p>
+             <span class="extra">
+                 The ancient city of Petra, Jordan, is located in a remote valley, nestled among sandstone mountains and cliffs. It was purported to be one of the places where Moses struck a rock and water gushed forth. Later the Nabataeans, an Arab tribe, made it their capital, and during this time it flourished, becoming an important trade center, especially for spices.                
+             </span>
+         </div>
+         <a href="#" class="readmore">Details..</a>
+     </div>
+     <div class="subcontainer" data-category="wonders">
+         <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Chichen-Itza-Yucatan-Mexico.webp"></div>
+         <div  class="descriptioncontainer">
+             <p class="imagedescription">Chichen Itza<br><span class="location"> Yucatan , Mexico</span></p>
+             <span class="extra">
+                 Chichén Itzá is a Mayan city on the Yucatán Peninsula in Mexico, which flourished in the 9th and 10th centuries CE. Under the Mayan tribe Itzá—who were strongly influenced by the Toltecs—a number of important monuments and temples were built. Among the most notable is the stepped pyramid El Castillo (“The Castle”), which rises 79 feet (24 meters) above the Main Plaza.                 
+             </span>
+         </div>
+         <a href="#" class="readmore">Details..</a>
+      </div>
+      <div class="subcontainer" data-category="wonders">
+         <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Great-Wall-of-China-Beijing.webp"></div>
+         <div  class="descriptioncontainer">
+             <p class="imagedescription">Great Wall of China<br><span class="location">Expansion: near Beijing.</span></p>
+             <span class="extra">
+                 Great might be an understatement. One of the world’s largest building-construction projects, the Great Wall of China is widely thought to be about 5,500 miles (8,850 km) long; a disputed Chinese study, however, claims the length is 13,170 miles (21,200 km). Work began in the 7th century BCE and continued for two millennia.
+              </span>
+         </div>
+         <a href="#" class="readmore">Details..</a>
+      </div>
+      <div class="subcontainer" data-category="wonders">
+         <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/christ.webp"></div>
+         <div  class="descriptioncontainer">
+             <p class="imagedescription">Christ the Redeemer<br><span class="location">Mount Corcovado , Rio de Janeiro</span></p>
+             <span class="extra">
+                 Christ the Redeemer, a colossal statue of Jesus, stands atop Mount Corcovado in Rio de Janeiro. Its origins date to just after World War I, when some Brazilians feared a “tide of godlessness.” They proposed a statue, which was ultimately designed by Heitor da Silva Costa, Carlos Oswald, and Paul Landowski.
+             </span>
+         </div>
+         <a href="#" class="readmore">Details..</a>
+      </div>
+      <div class="subcontainer" data-category="wonders">
+         <div class="dispimagecontainer"><img class="dispimage" src="Photos/Display images/Machu-Picchu.webp"></div>
+         <div  class="descriptioncontainer">
+             <p class="imagedescription">Machu Picchu<br><span class="location"> Cuzco , Peru</span></p>
+             <span class="extra">
+                 This Incan site near Cuzco, Peru, was “discovered” in 1911 by Hiram Bingham, who believed it was Vilcabamba, a secret Incan stronghold used during the 16th-century rebellion against Spanish rule. Although that claim was later disproved, the purpose of Machu Picchu has confounded scholars. 
+              </span>
+         </div>
+         <a href="#" class="readmore">Details..</a>
+      </div>
+    
+ </div>
+</div>
+
+
+
+
+
+
+
+
+    <!-- JAVA SCRIPT ATTACHMENTS-->
+
+    
+        
+      
+
+         <script src="hidin.js"></script>
+        <script src="script.js"></script>
+        <script src="api.js"></script>
+        
+
+        <script type="text/javascript" src="vanilla-tilt.js"></script>  
+
+        <script async defer>
+            
+            const target1=document.querySelectorAll(".subcontainerDetail");
+            const target2=document.querySelectorAll(".subcontainer");
+            const target3=document.querySelectorAll(".homedescription");
+
+            
+            function sheet(target,degree,glare)
+	          {VanillaTilt.init(target,{
+	        	max: degree,
+                glare: true, 
+                "max-glare": glare,     
+		        speed: 400 });
+              }
+
+            sheet(target2,4,.05);
+            sheet(target1,1,.1);
+            sheet(target3,4,.2);
+
+        </script>
+
+        <!-- END-->
+    </body>
+</html>

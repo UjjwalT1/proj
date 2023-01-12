@@ -1,0 +1,53 @@
+.sidebarbutton div{
+    margin-top: 7px;
+    height:2.5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    transition: all .3s;
+}
+
+.menuTop{
+    width:19px;
+}
+
+.menuMid{
+    width:34px;
+    
+}
+
+.menuBottom{
+    width:19px;
+   margin-left: 50%;
+    margin-bottom: 6px;
+}
+
+.sidebarbutton:hover .menuTop{
+    width:23px;
+    transform: translateX(5.5px);
+    background-color: rgba(255, 255, 255, 0.945);
+
+    
+}
+.sidebarbutton:hover .menuMid{
+    width:16px;
+    transform: translateX(8px);
+    background-color: rgba(255, 255, 255, 0.945);
+
+}
+.sidebarbutton:hover .menuBottom{
+    width:23px;
+   margin-left: 15%;
+   transform: rotate(0deg);
+   background-color: rgba(255, 255, 255, 0.945);
+
+}
+
+.menuTopActive{
+    transform: translateX(19px) ;
+}
+
+
+.menuBottomActive{
+    transform: translateX(-19px);
+}
+
