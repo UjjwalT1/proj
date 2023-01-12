@@ -1,5 +1,5 @@
 
-//776453bb11mshcd9b098a361c216p1b03b8jsn69df05795d5f :: this is the api key of my second rapid api account  
+
 
 //Divs that are holding their topic contents
 const temp0=document.querySelector(".temp0");
